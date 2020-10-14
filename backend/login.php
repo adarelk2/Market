@@ -5,9 +5,7 @@ require("../connection.php");
 $user = $_POST['username'];
 $password = $_POST['password'];
 $login = false;
-if(strlen($user) <=3)
-$login = false;
-else if(strlen($password) <=3)
+if(strlen($user) <=3 || strlen($password) <=3)
 $login = false;
 else
 {

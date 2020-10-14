@@ -1,0 +1,49 @@
+@media screen and (max-width: 1000px) {
+   .box
+   {
+      width:100%;
+   }
+}
+@media screen and (max-width: 769px) {
+   .lightBox .Register,.lightBox .Login
+   {
+      width:100%;
+   }
+header nav
+{
+   position: absolute;
+   background:rgb(206, 205, 205);
+   left:0;
+   top:85px;
+   width:50%;
+   height: 100vh;
+}
+nav a 
+{
+   text-align: center;
+   display: block;
+   padding:12px;
+   width:100%;
+   color:rgb(24, 23, 23)!important;
+ }
+ .strip
+ {
+min-height: 300px;
+ }
+ .gridForFour {
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1em;
+}
+.gridForThree {
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1em;
+}
+ .box
+ {
+    width:100%;
+ }
+}

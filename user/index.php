@@ -4,7 +4,7 @@
 function main()
 {
    global $mysqli;
-   $user = new UserClass($mysqli);
+   $user = new User($mysqli);
    $user->checkLogin($_SESSION['userName'],$_SESSION['password']);
    $getUser = $user->getUserName();
    $getEmail = $user->getEmail();
@@ -82,7 +82,7 @@ function orders()
       <div class="row col-12 bg-dark text-white m-auto justify-content-between ">
  <?php
  global $mysqli;
-   $user = new UserClass($mysqli);
+   $user = new User($mysqli);
    if($user->checkLogin($_SESSION['userName'],$_SESSION['password'])==true)
    {
       $myUser = $user->getUserName();
@@ -97,7 +97,6 @@ function orders()
           $user->getOrder($row['idItem'],$row['data'],$i);
       }
    }
-
  ?>
  </div>
 </div>

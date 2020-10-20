@@ -1,14 +1,13 @@
 <?php
-
-class ItemsClass
+class Items
 {
    private $mysqli;
 
-   function ItemsClass($_mysqli)
+   function Items($_mysqli)
    {
       $this->mysqli = $_mysqli;
-
    }
+
    function setItem($id)
    {
       $result = $this->mysqli->query("Select *from products where id=$id");
@@ -22,13 +21,11 @@ class ItemsClass
       $this->cate = $result['category'];
       return $this;
    }
+
    function getPrice()
    {
       return $this->price;
    }
- 
-
-
 }
 
 ?>

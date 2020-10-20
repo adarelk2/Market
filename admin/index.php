@@ -41,7 +41,7 @@ session_start();
          require_once("frontend/login.php");
       else
       {
-         $user = new ManagerClass($mysqli);
+         $user = new Manager($mysqli);
          $user->checkLogin($_SESSION['userName'],$_SESSION['password']);
          if($user->checkLevel() == false)
           header('Location: ../index.php');

@@ -7,7 +7,7 @@ $userName =  $_POST['data']['userName'];
 $email =  $_POST['data']['email'];
 $password = $_POST['data']['oldPassword'];
 $newPassword = $_POST['data']['newPassword'];
-$user = new UserClass($mysqli);
+$user = new User($mysqli);
 if($user->checkLogin($_SESSION['userName'],$_SESSION['password'])==true)
 {
    if(strlen($userName)<=5)

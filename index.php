@@ -100,7 +100,7 @@ session_start();
          require_once("frontend/contact.php");
         break;
         case "profile":
-         $user = new UserClass($mysqli);
+         $user = new User($mysqli);
          if($user->checkLogin($_SESSION['userName'],$_SESSION['password'])==true)
          require_once("user/index.php");
          else

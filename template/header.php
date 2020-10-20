@@ -10,7 +10,7 @@ function getHeader()
          </div>
          <img src="https://icon-library.com/images/anonymous-icon-png/anonymous-icon-png-2.jpg" class="logo" alt="">
          <?php
-         $user = new UserClass($mysqli);
+         $user = new User($mysqli);
          if($user->checkLogin($_SESSION['userName'],$_SESSION['password']) ==true)
          {
             ?>

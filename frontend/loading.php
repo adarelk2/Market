@@ -3,7 +3,7 @@ function main()
 {
   global $mysqli;
   global $explaneLoading;
-  $user = new UserClass($mysqli);
+  $user = new User($mysqli);
    ?>
 <section class="container center" id="id_Loading">
 <div class="col-12 col-md-6">

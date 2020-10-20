@@ -7,7 +7,6 @@ window.onload = ()=>{
 const init = ()=>{
    declareViewEvent();
    checkLocalStorage();
-   loadUser();
    doApi();
    createCart(data.cart);
    checkProfile();

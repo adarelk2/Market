@@ -1,6 +1,6 @@
 import {addToCart,deleteFromCart} from "./market_manager.js";
 import {editProductManager} from "./user_manager.js";
-class ProductClass
+class Product
 {
    constructor(_parent,_id,_name,_subject,_price,_cate,_img)
    {
